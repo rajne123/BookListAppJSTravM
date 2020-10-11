@@ -15,10 +15,12 @@ class UI {
     books.forEach((book) => UI.addBookToList(book));
   }
 
-  static addBookToList(book) {
-    const list = document.querySelector('#book-list');
+  static addBookToList(book)
+          {
 
-    const row = document.createElement('tr');
+              const list = document.querySelector('#book-list');
+
+            const row = document.createElement('tr');
 
     row.innerHTML = `
       <td>${book.title}</td>
